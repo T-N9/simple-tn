@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Geologica", sans-serif;
+  color : #1192d3;
+}
+
+.dark h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color : #2fe0ac;
+}
+
+.tn-shadow-1 {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.tn-shadow-2 {
+  box-shadow: #87878710 0px 0px 0px 100px;
+}
+
+.dark .tn-shadow-2 {
+  box-shadow: #2fe0ac10 0px 0px 0px 100px;
+}
+
+/* box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px; */
