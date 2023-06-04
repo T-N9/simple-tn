@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const HomeHero = () => {
   return (
-    <section>
+    <header>
       <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-5">
           <div className="w-full md:w-[60%]">
               <p className="text-lg">
@@ -23,7 +23,7 @@ const HomeHero = () => {
             </div>
           </div>
       </div>
-    </section>
+    </header>
   );
 };
 

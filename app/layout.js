@@ -2,7 +2,8 @@ import "./globals.css";
 import "./style.css";
 import { inter } from "./fonts";
 
-import { NavBar } from "@/components";
+/* Components */
+import { NavBar, Footer } from "@/components";
 
 import Providers from "./providers";
 import { DataProvider } from "./DataContext";
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
             <NavBar />
             <span className="mt-28 block"></span>
             {children}
+            <Footer />
           </Providers>
         </DataProvider>
       </body>

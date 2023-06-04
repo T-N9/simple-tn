@@ -10,7 +10,7 @@ const ProjectCardSm = ({ item }) => {
       <h1 className="font-bold text-2xl">{item.title}</h1>
       <p>{item.description}</p>
 
-      <div className="flex justify-between items-center mt-3 dark:text-light ">
+      <div className="flex justify-between items-center mt-3 text-dark dark:text-light ">
         <div className="flex gap-3 ">
           <a
             className="hover:text-primary dark:hover:text-accent transition-all duration-300"
