@@ -5,6 +5,7 @@ import { inter } from "./fonts";
 import { NavBar } from "@/components";
 
 import Providers from "./providers";
+import { DataProvider } from "./DataContext";
 
 export const metadata = {
   title: "TN Portfolio",
@@ -15,11 +16,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className} dark:bg-dark`}>
-        <Providers>
-          <NavBar />
-          <span className="mt-28 block"></span>
-          {children}
-        </Providers>
+        <DataProvider>
+          <Providers>
+            <NavBar />
+            <span className="mt-28 block"></span>
+            {children}
+          </Providers>
+        </DataProvider>
       </body>
     </html>
   );
