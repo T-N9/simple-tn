@@ -13,7 +13,7 @@ const ToggleTheme = () => {
     return null;
   }
   return (
-    <div className="flex justify-center items-center absolute -right-14">
+    <div className="flex justify-center items-center">
       {theme === "light" ? (
         <button
           className=" p-3 rounded-full shadow bg-white dark:bg-dark"

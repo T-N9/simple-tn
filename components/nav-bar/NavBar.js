@@ -1,78 +1,93 @@
 "use client";
-
+import { useState } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 import ToggleTheme from "./ToggleTheme";
 
-const NavBar = () => {
-  return (
-    <nav className="container lg:max-w-4xl mx-auto flex items-center justify-between py-2 px-5 bg-opacity-50 backdrop-filter backdrop-blur-lg lg:rounded-2xl tn-shadow-1 fixed top-0 lg:top-5 left-1/2 -translate-x-1/2 z-50">
-      <div className="flex items-end">
-        <Link href="/">
-          <span className="text-3xl font-bold font-heading text-primary dark:text-accent">
-            tn
-          </span>
-          .dev
-        </Link>
-      </div>
-      <ul className="hidden lg:flex space-x-7 text-sm">
-        <li>
-          <Link
-            href="/about"
-            className="hover:text-primary dark:hover:text-accent transition-colors"
-          >
-            About
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/projects"
-            className="hover:text-primary dark:hover:text-accent transition-colors"
-          >
-            Projects
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/services"
-            className="hover:text-primary dark:hover:text-accent transition-colors"
-          >
-            Services
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/writings"
-            className="hover:text-primary dark:hover:text-accent transition-colors"
-          >
-            Writings
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/contact"
-            className="hover:text-primary dark:hover:text-accent transition-colors"
-          >
-            Contact
-          </Link>
-        </li>
-      </ul>
-      <button className="lg:hidden text-dark dark:text-light hover:text-white focus:outline-none">
-        <svg
-          className="h-6 w-6"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </button>
+/* constants */
+import routes from "@/constants/routes";
 
-      <ToggleTheme/>
-    </nav>
+/* Icons */
+import { LuMenu } from "react-icons/lu";
+import { IoClose } from "react-icons/io5";
+
+const NavBar = () => {
+  const route = usePathname();
+  const [showNav, setShowNav] = useState(false);
+
+  return (
+    <>
+      <nav className="container lg:max-w-4xl mx-auto flex items-center justify-between py-2 px-5 bg-opacity-50 backdrop-filter backdrop-blur-lg lg:rounded-2xl tn-shadow-1 fixed top-0 lg:top-5 left-1/2 -translate-x-1/2 z-50">
+        <div className="flex items-end">
+          <Link href="/">
+            <span className="text-3xl font-bold font-heading text-primary dark:text-accent">
+              tn
+            </span>
+            .dev
+          </Link>
+        </div>
+        <ul className="hidden lg:flex space-x-7 text-sm">
+          {routes.map((item, index) => {
+            return (
+              <li className="relative">
+                <Link
+                  href={item.route}
+                  className={`${
+                    item.route === route && "text-primary dark:text-accent"
+                  } hover:text-primary dark:hover:text-accent transition-colors`}
+                >
+                  {item.name}
+                  {item.route === route && (
+                    <span className="absolute inset-x-1 -bottom-4 left-1/2 -translate-x-1/2 w-[220%] h-px bg-gradient-to-r from-primary/0 via-primary/40 to-primary/0 dark:from-accent/0 dark:via-accent/40 dark:to-accent/0"></span>
+                  )}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+        <button
+          onClick={() => {
+            setShowNav((prev) => !prev);
+          }}
+          className="lg:hidden text-dark dark:text-light hover:text-white focus:outline-none"
+        >
+          {showNav ? <IoClose size={30} /> : <LuMenu size={30} />}
+        </button>
+        <div className=" absolute -right-14">
+          <ToggleTheme />
+        </div>
+      </nav>
+      <div
+        className={`flex fixed lg:hidden top-12 py-5 left-0 right-0 justify-center bg-opacity-50 backdrop-filter backdrop-blur-lg z-40 tn-shadow-1 min-h-screen transition-all duration-300 ${
+          showNav ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
+      >
+        <ul className=" text-sm flex flex-col gap-4 items-center w-1/2">
+          {routes.map((item, index) => {
+            return (
+              <li className="relative">
+                <Link
+                  href={item.route}
+                  className={`${
+                    item.route === route && "text-primary dark:text-accent"
+                  } hover:text-primary dark:hover:text-accent transition-colors`}
+                  onClick={() => {
+                    setShowNav(false);
+                  }}
+                >
+                  {item.name}
+                  {item.route === route && (
+                    <span className="absolute inset-x-1 -bottom-1 left-1/2 -translate-x-1/2 w-[220%] h-px bg-gradient-to-r from-primary/0 via-primary/40 to-primary/0 dark:from-accent/0 dark:via-accent/40 dark:to-accent/0"></span>
+                  )}
+                </Link>
+              </li>
+            );
+          })}
+          <ToggleTheme />
+        </ul>
+      </div>
+    </>
   );
 };
 
