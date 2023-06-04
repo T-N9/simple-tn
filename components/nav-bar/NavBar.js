@@ -30,7 +30,7 @@ const NavBar = () => {
         <ul className="hidden lg:flex space-x-7 text-sm">
           {routes.map((item, index) => {
             return (
-              <li className="relative">
+              <li className="relative" key={index}>
                 <Link
                   href={item.route}
                   className={`${
