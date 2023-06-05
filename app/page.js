@@ -1,4 +1,4 @@
-import { HomeHero, HomeProjects, HomeWts } from "@/components";
+import { HomeHero, HomeProjects, HomeWts, HomeSkills } from "@/components";
 
 export default function Home() {
   return (
@@ -8,6 +8,9 @@ export default function Home() {
       <HomeProjects />
       <span className="block  h-1 my-5 relative -z-0 w-full bg-light"></span>
       <HomeWts />
+      <span className="block  h-1 my-5 relative -z-0 w-full bg-light"></span>
+      <HomeSkills/>
+      <span className="block  h-1 my-5 relative -z-0 w-full bg-light"></span>
     </main>
   );
 }

@@ -13,8 +13,6 @@ import { BsArrowRightShort } from "react-icons/bs";
 const HomeProjects = () => {
   // const { projects, isLoading } = Hook();
   const { projectData, isLoading } = useContext(DataContext);
-
-  console.log({ projectData });
   return (
     <section>
       <div className="flex justify-between w-full lg:w-[60%] items-center text-dark dark:text-light">
