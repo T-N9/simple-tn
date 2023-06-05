@@ -63,7 +63,7 @@ const NavBar = () => {
           showNav ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
-        <ul className=" text-sm flex flex-col gap-4 items-center w-1/2">
+        <ul className=" text-xl flex flex-col gap-6 items-center w-1/2">
           {routes.map((item, index) => {
             return (
               <li className="relative" key={index}>

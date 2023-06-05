@@ -84,7 +84,7 @@ const HomeHero = () => {
             </a>
           </div>
         </div>
-        <div className=" flex justify-center relative">
+        <div className=" flex justify-center relative z-20">
           <div className="tn-shadow-2 bg-light z-10 bg-opacity-30 rounded-full ">
             <Image
               className="rounded-full border-4 shadow border-white relative z-20"
