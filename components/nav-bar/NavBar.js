@@ -59,7 +59,7 @@ const NavBar = () => {
         </div>
       </nav>
       <div
-        className={`flex fixed lg:hidden top-12 py-5 left-0 right-0 justify-center bg-opacity-50 backdrop-filter backdrop-blur-lg z-40 tn-shadow-1 min-h-screen transition-all duration-300 ${
+        className={`flex fixed lg:hidden top-[54px] py-5 left-0 right-0 justify-center bg-opacity-50 backdrop-filter backdrop-blur-lg z-40 tn-shadow-1 min-h-screen transition-all duration-300 ${
           showNav ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
