@@ -4,7 +4,7 @@ const Motto = () => {
   return (
     <section className="my-10">
       <p className="text-center text-gray-300 font-bold">
-        “ If I can't build a wall, I'll lay one brick every day until it's done.
+        “ If I can&apos;t build a wall, I&apos;ll lay one brick every day until it&apos;s done.
         ”
       </p>
       <div className="flex flex-col items-center mt-3 text-dark/40 dark:text-light/40">
