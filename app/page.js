@@ -3,6 +3,7 @@ import {
   HomeProjects,
   HomeWts,
   HomeSkills,
+  HomeContact,
   Motto,
 } from "@/components";
 
@@ -16,6 +17,8 @@ export default function Home() {
       <HomeWts />
       <span className="block  h-1 my-5 relative -z-0 w-full bg-light"></span>
       <HomeSkills />
+      <span className="block  h-1 my-5 relative -z-0 w-full bg-light"></span>
+      <HomeContact/>
       <span className="block  h-1 my-5 relative -z-0 w-full bg-light"></span>
       <Motto />
     </main>
