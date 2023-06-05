@@ -6,6 +6,8 @@ export { default as HomeWts } from './home-wts/HomeWts';
 export { default as HomeSkills } from './home-skills/HomeSkills';
 export { default as HomeContact } from './home-contact/HomeContact';
 
+export { default as AboutHero } from './about-hero/AboutHero';
+
 export { default as Motto } from './motto/Motto';
 
 export { default as Footer } from './footer/Footer';

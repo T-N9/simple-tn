@@ -1,4 +1,4 @@
-
+import { AboutHero, Motto } from "@/components";
 
 export const metadata = {
     title: "About Te Nyain",
@@ -7,8 +7,10 @@ export const metadata = {
 
 const About = () => {
     return (
-        <main>
-            <h1>Hello about</h1>
+        <main className="dark:bg-dark relative max-w-3xl mx-auto px-4 lg:px-0">
+            <AboutHero/>
+            <span className="block  h-1 my-5 relative -z-0 w-full md:w-[60%] bg-light"></span>
+            <Motto />
         </main>
     );
 }
