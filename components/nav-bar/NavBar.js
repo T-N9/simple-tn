@@ -18,7 +18,7 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className="container lg:max-w-4xl mx-auto flex items-center justify-between py-2 px-5 bg-opacity-50 backdrop-filter backdrop-blur-lg lg:rounded-2xl tn-shadow-1 fixed top-0 lg:top-5 left-1/2 -translate-x-1/2 z-50">
+      <nav className="container lg:max-w-4xl mx-auto flex items-center justify-between py-2 px-5 bg-opacity-50 backdrop-filter backdrop-blur-lg lg:rounded-2xl tn-shadow-1 fixed top-0 lg:top-5 left-1/2 -translate-x-1/2 z-40">
         <div className="flex items-end">
           <Link href="/">
             <span className="text-3xl font-bold font-heading text-primary dark:text-accent">
