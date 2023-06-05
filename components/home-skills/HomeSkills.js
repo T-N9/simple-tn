@@ -20,6 +20,7 @@ import {
   SiGooglesearchconsole,
   SiNetlify,
   SiVercel,
+  SiContentful
 } from "@icons-pack/react-simple-icons";
 
 const HomeSkills = () => {
@@ -123,6 +124,10 @@ const HomeSkills = () => {
                 <div className="flex flex-col items-center text-xs text-dark dark:text-light">
                   <SiVercel xlinkTitle="true" />
                   Vercel
+                </div>
+                <div className="flex flex-col items-center text-xs text-dark dark:text-light">
+                  <SiContentful xlinkTitle="true" />
+                  Contentful
                 </div>
               </div>
               <hr className="my-4" />
