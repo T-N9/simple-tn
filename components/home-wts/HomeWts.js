@@ -43,10 +43,19 @@ const HomeWts = () => {
         {testimonials.map((item, index) => {
           return (
             <div className="" key={index}>
-              <p className="border-l-2 border-primary dark:border-accent pl-4">{item.saying}</p>
+              <p className="border-l-2 border-primary dark:border-accent pl-4">
+                {item.saying}
+              </p>
               <p className="pl-4 mt-2 text-sm">
-                <span className="font-bold text-primary dark:text-accent">{item.name}</span> /{" "}
-                {item.position}
+                <span className="font-bold text-primary dark:text-accent">
+                  {item.name}
+                </span>{" "}
+                / {item.position}{" "}
+                {item.company && (
+                  <span>
+                    at <b>{item.company}</b>
+                  </span>
+                )}
               </p>
             </div>
           );
