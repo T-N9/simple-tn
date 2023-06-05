@@ -56,7 +56,7 @@ const HomeSkills = () => {
                 </div>
                 <div className="flex flex-col items-center text-xs text-dark dark:text-light">
                   <SiTailwindcss xlinkTitle="true" />
-                  TailwindCSS
+                  Tailwind
                 </div>
                 <div className="flex flex-col items-center text-xs text-dark dark:text-light">
                   <SiJquery xlinkTitle="true" />
@@ -98,7 +98,7 @@ const HomeSkills = () => {
                 </div>
                 <div className="flex flex-col items-center text-xs text-dark dark:text-light">
                   <SiMicrosoftpowerpoint xlinkTitle="true" />
-                  MS Power Point
+                  MS Point
                 </div>
                 <div className="flex flex-col items-center text-xs text-dark dark:text-light">
                   <SiVisualstudiocode xlinkTitle="true" />
@@ -114,7 +114,7 @@ const HomeSkills = () => {
                 </div>
                 <div className="flex flex-col items-center text-xs text-dark dark:text-light">
                   <SiGooglesearchconsole xlinkTitle="true" />
-                  Search Console
+                  S Console
                 </div>
                 <div className="flex flex-col items-center text-xs text-dark dark:text-light">
                   <SiNetlify xlinkTitle="true" />
