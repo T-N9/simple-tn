@@ -38,10 +38,10 @@ export default function RootLayout({ children }) {
         </svg>
 
         <div
-          className="fixed z-20 top-0 inset-x-0 flex justify-center overflow-hidden pointer-events-none"
+          className="absolute lg:fixed z-20 top-[3.2rem] lg:top-0 inset-x-0 flex justify-center overflow-hidden pointer-events-none"
           style={{}}
         >
-          <div className="w-[108rem] flex-none flex justify-start">
+          <div className="w-[108rem] flex-none flex justify-end lg:justify-start">
             <picture>
               <source
                 srcSet="https://tailwindcss.com/_next/static/media/docs@30.8b9a76a2.avif"
