@@ -15,7 +15,7 @@ const HomeProjects = () => {
   const { projectData, isLoading } = useContext(DataContext);
   return (
     <section>
-      <div className="flex justify-between w-full lg:w-[60%] items-center text-dark dark:text-light">
+      <div className="flex justify-between w-full md:w-[60%] items-center text-dark dark:text-light">
         <h1 className="text-xl font-bold text-dark dark:text-light">Projects</h1>
 
         <Link
