@@ -5,4 +5,6 @@ export { default as HomeProjects } from './home-projects/HomeProjects';
 export { default as HomeWts } from './home-wts/HomeWts';
 export { default as HomeSkills } from './home-skills/HomeSkills';
 
+export { default as Motto } from './motto/Motto';
+
 export { default as Footer } from './footer/Footer';
