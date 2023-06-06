@@ -5,12 +5,15 @@ import Link from "next/link";
 import {
   BiPen,
   BiEnvelope,
-  // BiLogoGithub,
-  // BiLogoLinkedin,
 } from "react-icons/bi";
 import { AiOutlineLinkedin, AiOutlineGithub } from "react-icons/ai";
+import {RxDotsVertical} from 'react-icons/rx'
+
+import Hook from "./hook";
 
 const AboutHero = () => {
+  const { seeMore, setSeeMore } = Hook();
+
   return (
     <header>
       <div className="flex flex-col-reverse md:flex-row items-start justify-between gap-5">
@@ -36,39 +39,48 @@ const AboutHero = () => {
               “ My goal is to deliver a front-end stack from scratch to
               well-performed websites. ”
             </span>
-            <br />
-            <br />
-            One of my passions lies in creating captivating UI designs and
-            prototypes, as I firmly believe that a strong visual foundation is
-            key to an exceptional user experience. I also find that
-            collaborations play a crucial role in my growth as both a technical
-            professional and a communicator. Working alongside talented
-            individuals inspires me to continuously improve my skills and create
-            extraordinary digital experiences.
-            <br />
-            <br />
-            Beyond the realm of web development, I find solace in the world of
-            music. During my spare time, you can often find me playing
-            instruments and composing music. This creative outlet fuels my
-            imagination and enhances my ability to think outside the box.
-            <br />
-            <br />
-            <span className="text-lg font-bold text-primary dark:text-accent">
-              “ I care about your business values and targeted customers to meet
-              your golden goals for tomorrow. ”
+            <span className={`${seeMore ? "hidden" : "table"} text-center mx-auto`}><RxDotsVertical size={20}/> </span>
+            <span className={seeMore ? "block" : "hidden"}>
+              <br />
+              One of my passions lies in creating captivating UI designs and
+              prototypes, as I firmly believe that a strong visual foundation is
+              key to an exceptional user experience. I also find that
+              collaborations play a crucial role in my growth as both a
+              technical professional and a communicator. Working alongside
+              talented individuals inspires me to continuously improve my skills
+              and create extraordinary digital experiences.
+              <br />
+              <br />
+              Beyond the realm of web development, I find solace in the world of
+              music. During my spare time, you can often find me playing
+              instruments and composing music. This creative outlet fuels my
+              imagination and enhances my ability to think outside the box.
+              <br />
+              <br />
+              <span className="text-lg font-bold text-primary dark:text-accent">
+                “ I care about your business values and targeted customers to
+                meet your golden goals for tomorrow. ”
+              </span>
+              <br />
+              <br />
+              I approach each project with genuine care, always considering your
+              business values and the needs of your target customers. By
+              understanding your objectives, I strive to help you achieve your
+              golden goals for tomorrow.
+              <br />
+              <br />
+              Let&apos;s embark on a collaborative journey together, where your
+              ideas will be meticulously crafted into powerful web solutions. I
+              can&apos;t wait to bring your vision to life and make a meaningful
+              impact in the digital realm.
             </span>
-            <br />
-            <br />
-            I approach each project with genuine care, always considering your
-            business values and the needs of your target customers. By
-            understanding your objectives, I strive to help you achieve your
-            golden goals for tomorrow.
-            <br />
-            <br />
-            Let&apos;s embark on a collaborative journey together, where your ideas
-            will be meticulously crafted into powerful web solutions. I can&apos;t
-            wait to bring your vision to life and make a meaningful impact in
-            the digital realm.
+            <br/>
+            <button
+              onClick={() => setSeeMore((prev) => !prev)}
+              className="text-center mx-auto table text-sm underline mb-6"
+            >
+              See {seeMore ? "Less" : "More"}
+            </button>
           </p>
           <div className="flex gap-4 mt-4 flex-wrap">
             <Link
