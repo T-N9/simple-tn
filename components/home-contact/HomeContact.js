@@ -2,6 +2,9 @@
 import { useState } from "react";
 import { client } from "@/client";
 
+import { BiEnvelope } from "react-icons/bi";
+import { AiOutlineLinkedin } from "react-icons/ai";
+
 const HomeContact = () => {
   const [formData, setFormData] = useState({
     username: "",
@@ -71,15 +74,46 @@ const HomeContact = () => {
             potential collaborations, or simply have a question, this is the
             place to reach out.
           </p>
+          <div className="flex gap-4 mt-4 flex-wrap">
+            <a
+              className="flex gap-2 items-center text-sm group"
+              href="https://www.linkedin.com/in/te-nyain-moe-lwin-80b4a11a4/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span className="flex p-1 bg-gradient-to-tl from-primary via-primary to-blue-400 dark:from-accent dark:via-accent dark:to-green-400 rounded-lg text-white">
+                <AiOutlineLinkedin
+                  className="group-hover:scale-110 transition-all"
+                  size={20}
+                />
+              </span>
+              LinkedIn
+            </a>
+
+            <a
+              className="flex gap-2 items-center text-sm group"
+              href="mailto:tenyainmoelwin@gmail.com"
+            >
+              <span className="flex p-1 bg-gradient-to-tl from-primary via-primary to-blue-400 dark:from-accent dark:via-accent dark:to-green-400 rounded-lg text-white">
+                <BiEnvelope
+                  className="group-hover:scale-110 transition-all"
+                  size={20}
+                />
+              </span>
+              Mail
+            </a>
+          </div>
         </div>
         <div className="flex-[6]">
           <form onSubmit={handleSubmit} className="tn_form">
-            <div className={`flex md:flex-row flex-col gap-3 justify-end ${
+            <div
+              className={`flex md:flex-row flex-col gap-3 justify-end ${
                 isFormSubmitted && "select-none pointer-events-none opacity-75"
-              }`}>
+              }`}
+            >
               <div className="head flex flex-col gap-3">
                 <input
-                  className="p-2 tn-shadow-1 text-sm rounded focus:border-primary outline-none border border-transparent transition-all duration-300 dark:focus:border-accent"
+                  className="p-2 tn-shadow-1 text-sm rounded focus:border-primary outline-none border border-transparent transition-all duration-300 dark:focus:border-accent bg-gray-100 dark:bg-gray-950"
                   type="text"
                   name="username"
                   id="name"
@@ -88,7 +122,7 @@ const HomeContact = () => {
                   onChange={handleChangeInput}
                 />
                 <input
-                  className="p-2 tn-shadow-1 text-sm rounded focus:border-primary outline-none border border-transparent transition-all duration-300 dark:focus:border-accent"
+                  className="p-2 tn-shadow-1 text-sm rounded focus:border-primary outline-none border border-transparent transition-all duration-300 dark:focus:border-accent bg-gray-100 dark:bg-gray-950"
                   type="email"
                   name="email"
                   id="email"
@@ -98,7 +132,7 @@ const HomeContact = () => {
                 />
               </div>
               <textarea
-                className="p-2 tn-shadow-1 text-sm rounded focus:border-primary outline-none border border-transparent transition-all duration-300 dark:focus:border-accent min-h-[100px] md:min-h-full area"
+                className="p-2 tn-shadow-1 text-sm rounded focus:border-primary outline-none border border-transparent transition-all duration-300 dark:focus:border-accent bg-gray-100 dark:bg-gray-950 min-h-[100px] md:min-h-full area"
                 placeholder="Your Message"
                 name="message"
                 value={message}
