@@ -1,13 +1,9 @@
-  
 import Image from "next/image";
 import Link from "next/link";
 
-import {
-  BiPen,
-  BiEnvelope,
-} from "react-icons/bi";
+import { BiPen, BiEnvelope } from "react-icons/bi";
 import { AiOutlineLinkedin, AiOutlineGithub } from "react-icons/ai";
-import {RxDotsVertical} from 'react-icons/rx'
+import { RxDotsVertical } from "react-icons/rx";
 
 import Hook from "./hook";
 
@@ -39,7 +35,11 @@ const AboutHero = () => {
               “ My goal is to deliver a front-end stack from scratch to
               well-performed websites. ”
             </span>
-            <span className={`${seeMore ? "hidden" : "table"} text-center mx-auto`}><RxDotsVertical size={20}/> </span>
+            <span
+              className={`${seeMore ? "hidden" : "table"} text-center mx-auto`}
+            >
+              <RxDotsVertical size={20} />{" "}
+            </span>
             <span className={seeMore ? "block" : "hidden"}>
               <br />
               One of my passions lies in creating captivating UI designs and
@@ -74,7 +74,7 @@ const AboutHero = () => {
               can&apos;t wait to bring your vision to life and make a meaningful
               impact in the digital realm.
             </span>
-            <br/>
+            {seeMore && <br />}
             <button
               onClick={() => setSeeMore((prev) => !prev)}
               className="text-center mx-auto table text-sm underline mb-6"
