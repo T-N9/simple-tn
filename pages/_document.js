@@ -17,7 +17,7 @@ export default function Document() {
           referrerpolicy="no-referrer"
         />
       </Head>
-      <body className="dark:bg-dark relative">
+      <body className="dark:bg-dark">
         <Main />
         <NextScript />
       </body>
