@@ -15,7 +15,7 @@ const AboutHero = () => {
       <div className="flex flex-col-reverse md:flex-row items-start justify-between gap-5">
         <div className="w-full md:w-[60%]">
           <p>
-            Hello there! I am <b>Te Nyain Moe Lwin</b>, a passionate and
+            <span className="text-xl">Hello there! I am <b>Te Nyain Moe Lwin</b></span>, a passionate and
             creative front-end web developer, ready to bring your ideas to life.
             At the age of 22, I have already gained over a year of valuable
             experience in the field. Since 2020, I have immersed myself in the
