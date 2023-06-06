@@ -11,6 +11,7 @@ module.exports = {
       backgroundImage: {},
       fontFamily: {
         heading: ["Geologica", "sans-serif"],
+        primary : ["Inter" , "sans-serif"]
       },
       colors: {
         primary: "#1192d3",
