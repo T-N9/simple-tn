@@ -1,6 +1,5 @@
-"use client"; // This is a client component 👈🏽
 import { useContext } from "react";
-import { DataContext } from "@/app/DataContext";
+import { DataContext } from "../../store/DataContext";
 import Link from "next/link";
 import Hook from "./hook";
 

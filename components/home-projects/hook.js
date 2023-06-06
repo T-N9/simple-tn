@@ -1,4 +1,4 @@
-"use client"; // This is a client component 👈🏽
+   // This is a client component 👈🏽
 
 import { useState, useEffect } from "react";
 import { client, urlFor } from "@/client";
