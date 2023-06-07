@@ -66,11 +66,11 @@ const About = () => {
       </Head>
       <main className="dark:bg-dark relative max-w-3xl mx-auto px-4 lg:px-0">
         <AboutHero />
-        <span className="block  h-1 my-5 relative -z-0 w-full md:w-[60%] bg-light"></span>
+        <span className="block  h-1 my-10 relative -z-0 w-full md:w-[60%] bg-light"></span>
         <AboutTimeline/>
-        <span className="block  h-1 my-5 relative -z-0 w-full bg-light"></span>
+        <span className="block  h-1 my-10 relative -z-0 w-full bg-light"></span>
         <HomeWts/>
-        <span className="block  h-1 my-5 relative -z-0 w-full bg-light"></span>
+        <span className="block  h-1 my-10 relative -z-0 w-full bg-light"></span>
 
         <Motto />
       </main>
