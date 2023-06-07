@@ -25,7 +25,7 @@ import {
 const HomeSkills = () => {
   return (
     <section>
-      <h1 className="text-xl font-bold text-dark dark:text-light">Skills</h1>
+      <h1 className="heading-1">Skills</h1>
 
       <div className="mt-4">
           <div className="flex items-start gap-2 lg:gap-5">

@@ -62,7 +62,7 @@ const HomeContact = () => {
   };
   return (
     <section>
-      <h1 className="text-xl font-bold text-dark dark:text-light">
+      <h1 className="heading-1">
         Keep in Touch
       </h1>
 
@@ -74,14 +74,14 @@ const HomeContact = () => {
             potential collaborations, or simply have a question, this is the
             place to reach out.
           </p>
-          <div className="flex gap-4 mt-4 flex-wrap">
+          <div className="social-banner">
             <a
               className="flex gap-2 items-center text-sm group"
               href="https://www.linkedin.com/in/te-nyain-moe-lwin-80b4a11a4/"
               target="_blank"
               rel="noreferrer"
             >
-              <span className="flex p-1 bg-gradient-to-tl from-primary via-primary to-blue-400 dark:from-accent dark:via-accent dark:to-green-400 rounded-lg text-white">
+              <span className="icon-btn">
                 <AiOutlineLinkedin
                   className="group-hover:scale-110 transition-all"
                   size={20}
@@ -94,7 +94,7 @@ const HomeContact = () => {
               className="flex gap-2 items-center text-sm group"
               href="mailto:tenyainmoelwin@gmail.com"
             >
-              <span className="flex p-1 bg-gradient-to-tl from-primary via-primary to-blue-400 dark:from-accent dark:via-accent dark:to-green-400 rounded-lg text-white">
+              <span className="icon-btn">
                 <BiEnvelope
                   className="group-hover:scale-110 transition-all"
                   size={20}
@@ -113,7 +113,7 @@ const HomeContact = () => {
             >
               <div className="head flex flex-col gap-3">
                 <input
-                  className="p-2 tn-shadow-1 text-sm rounded focus:border-primary outline-none border border-transparent transition-all duration-300 dark:focus:border-accent bg-gray-100 dark:bg-gray-950"
+                  className="form-input tn-shadow-1"
                   type="text"
                   name="username"
                   id="name"
@@ -122,7 +122,7 @@ const HomeContact = () => {
                   onChange={handleChangeInput}
                 />
                 <input
-                  className="p-2 tn-shadow-1 text-sm rounded focus:border-primary outline-none border border-transparent transition-all duration-300 dark:focus:border-accent bg-gray-100 dark:bg-gray-950"
+                  className="form-input tn-shadow-1"
                   type="email"
                   name="email"
                   id="email"
@@ -132,7 +132,7 @@ const HomeContact = () => {
                 />
               </div>
               <textarea
-                className="p-2 tn-shadow-1 text-sm rounded focus:border-primary outline-none border border-transparent transition-all duration-300 dark:focus:border-accent bg-gray-100 dark:bg-gray-950 min-h-[100px] md:min-h-full area"
+                className="form-input tn-shadow-1 min-h-[100px] md:min-h-full"
                 placeholder="Your Message"
                 name="message"
                 value={message}
@@ -142,7 +142,7 @@ const HomeContact = () => {
 
             <button
               type="submit"
-              className={`py-2 min-w-[140px] px-4 bg-primary hover:bg-opacity-75 transition-all duration-300 dark:bg-accent text-white dark:text-white text-xs rounded mt-3 table mx-auto md:mx-0 md:ml-auto ${
+              className={`primary-btn ${
                 isFormSubmitted && "select-none pointer-events-none"
               }`}
               disabled={isFormSubmitted}
@@ -155,7 +155,7 @@ const HomeContact = () => {
             </button>
 
             {error ? (
-              <p className="error-form text-right text-xs text-red-500 mt-2">
+              <p className="error-form text-center lg:text-right text-xs text-red-500 mt-2">
                 ** Please fill completly. **
               </p>
             ) : (

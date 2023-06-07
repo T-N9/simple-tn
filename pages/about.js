@@ -64,13 +64,13 @@ const About = () => {
         <meta property="twitter:image" content="meta.png" />
         <title>About Te Nyain Moe Lwin | Who am I?</title>
       </Head>
-      <main className="dark:bg-dark relative max-w-3xl mx-auto px-4 lg:px-0">
+      <main className="main-container">
         <AboutHero />
-        <span className="block  h-1 my-10 relative -z-0 w-full md:w-[60%] bg-light"></span>
+        <span className="spacer md:w-[60%]"></span>
         <AboutTimeline/>
-        <span className="block  h-1 my-10 relative -z-0 w-full bg-light"></span>
+        <span className="spacer"></span>
         <HomeWts/>
-        <span className="block  h-1 my-10 relative -z-0 w-full bg-light"></span>
+        <span className="spacer"></span>
 
         <Motto />
       </main>

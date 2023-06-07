@@ -82,12 +82,12 @@ const AboutHero = () => {
               See {seeMore ? "Less" : "More"}
             </button>
           </p>
-          <div className="flex gap-4 mt-4 flex-wrap">
+          <div className="social-banner">
             <Link
               className="flex gap-2 items-center text-sm group"
               href={"/writings"}
             >
-              <span className="flex p-1 bg-gradient-to-tl from-primary via-primary to-blue-400 dark:from-accent dark:via-accent dark:to-green-400 rounded-lg text-white ">
+              <span className="icon-btn ">
                 <BiPen
                   className="group-hover:scale-110 transition-all"
                   size={20}
@@ -102,7 +102,7 @@ const AboutHero = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <span className="flex p-1 bg-gradient-to-tl from-primary via-primary to-blue-400 dark:from-accent dark:via-accent dark:to-green-400 rounded-lg text-white">
+              <span className="icon-btn">
                 <AiOutlineGithub
                   className="group-hover:scale-110 transition-all"
                   size={20}
@@ -116,7 +116,7 @@ const AboutHero = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <span className="flex p-1 bg-gradient-to-tl from-primary via-primary to-blue-400 dark:from-accent dark:via-accent dark:to-green-400 rounded-lg text-white">
+              <span className="icon-btn">
                 <AiOutlineLinkedin
                   className="group-hover:scale-110 transition-all"
                   size={20}
@@ -129,7 +129,7 @@ const AboutHero = () => {
               className="flex gap-2 items-center text-sm group"
               href="mailto:tenyainmoelwin@gmail.com"
             >
-              <span className="flex p-1 bg-gradient-to-tl from-primary via-primary to-blue-400 dark:from-accent dark:via-accent dark:to-green-400 rounded-lg text-white">
+              <span className="icon-btn">
                 <BiEnvelope
                   className="group-hover:scale-110 transition-all"
                   size={20}

@@ -36,7 +36,7 @@ const HomeWts = () => {
 
   return (
     <section>
-      <h1 className="text-xl font-bold text-dark dark:text-light">
+      <h1 className="heading-1">
         Testimonies
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-3 relative z-10">

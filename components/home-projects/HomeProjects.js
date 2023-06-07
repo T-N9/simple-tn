@@ -15,7 +15,7 @@ const HomeProjects = () => {
   return (
     <section>
       <div className="flex justify-between w-full md:w-[60%] items-center text-dark dark:text-light">
-        <h1 className="text-xl font-bold text-dark dark:text-light">Projects</h1>
+        <h1 className="heading-1">Projects</h1>
 
         <Link
           href={"/projects"}

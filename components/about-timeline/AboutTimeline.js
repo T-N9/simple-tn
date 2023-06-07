@@ -3,7 +3,7 @@ import React from "react";
 const AboutTimeline = () => {
   return (
     <section>
-      <h1 className="text-xl font-bold text-dark dark:text-light">Timeline</h1>
+      <h1 className="heading-1">Timeline</h1>
 
       <div className="mt-3 flex flex-col md:flex-row gap-3 justify-between">
         <div className="border-l border-primary dark:border-accent pl-5 flex flex-col gap-3">
