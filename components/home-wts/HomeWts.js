@@ -3,10 +3,11 @@ import React from "react";
 const HomeWts = () => {
   const testimonials = [
     {
-      name: "Hein Htet",
+      name: "Hein Htet Zan",
       country: "Myanmar",
-      position: "Instructor",
+      position: "Web Instructor",
       company: "MMSIT",
+      website : "https://mms-it.com/",
       saying:
         'Te Nyain is a well-trained student who took the "Special Web Design" course from us. He is specialized in Front-end development and delivering trustworthy interactive websites to his consumers.',
     },
@@ -14,24 +15,11 @@ const HomeWts = () => {
       name: "Tr. Thant",
       company: "BS Camp",
       country: "Myanmar",
+      website : "https://bscampmm.com/",
       position: "IT instructor",
       saying:
         "Te Nyain is a cooperative and collaborative student. He is open to learning and receptive to improving his studies. He follows directions perfectly and shows respect for peers and teachers. I'm impressed by his passion for discussion and collaboration. It's an honor to be his teacher.",
     },
-    // {
-    //   name: "David",
-    //   country: "Myanmar",
-    //   position: "Front-end developer",
-    //   saying:
-    //     "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    // },
-    // {
-    //   name: "Michael",
-    //   country: "Japan",
-    //   position: "Senior Programmer",
-    //   saying:
-    //     "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    // },
   ];
 
   return (
@@ -53,7 +41,7 @@ const HomeWts = () => {
                 / {item.position}{" "}
                 {item.company && (
                   <span>
-                    at <b>{item.company}</b>
+                    at <a href={item.website} target="_blank" rel="noreferrer"><b>{item.company}</b></a>
                   </span>
                 )}
               </p>
